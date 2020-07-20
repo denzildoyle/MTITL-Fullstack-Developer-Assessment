@@ -4,7 +4,7 @@
 -   npm run test `npm run test`
 
 
-#### Folder GetMissingLetters
+#### Folder: GetMissingLetters
 
 The sentence "A quick brown fox jumps over the lazy dog" contains every single letter in the alphabet. Such sentences are called pangrams.
 
