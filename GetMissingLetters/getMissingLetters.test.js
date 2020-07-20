@@ -4,8 +4,6 @@ const oneLetterMissing = new MissingLetters("abcdefghijklmnopqrstuvwxy");
 const allLetters = new MissingLetters("abcdefghijklmnopqrstuvwxyz");
 const sentanceWithAllLetters = new MissingLetters("A quick brown fox jumps over the lazy dog");
 
-
-
 test('Z missing', () => {
     expect(oneLetterMissing.GetMissingLetters).toBe('z');
 });

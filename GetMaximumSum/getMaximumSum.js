@@ -1,12 +1,8 @@
-const triangle = [
-  [5],
-  [9, 6],
-  [4, 6, 8],
-  [0, 7, 1, 5]
-];
-
 function getMaximumSum(triangle) {
-    return 27;
+  for (let x = triangle.length - 2; x >= 0; x--)
+    for (let i = 0; i <= x; i++)
+      triangle[x][i]+= Math.max(triangle[x + 1][i], triangle[x + 1][i + 1]);
+  return triangle[0][0];
 }
 
-console.log(getMaximumSum(triangle))
+module.exports = getMaximumSum;
