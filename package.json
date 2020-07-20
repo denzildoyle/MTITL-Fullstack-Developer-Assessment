@@ -1,7 +1,7 @@
 {
   "name": "mtitl-fullstack-developer-assessment",
   "version": "1.0.0",
-  "description": "MTITL Full STACK Develper Assessment",
+  "description": "MTITL Full Stack Develper Assessment",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -18,5 +18,6 @@
   "homepage": "https://github.com/denzildoyle/MTITL-Fullstack-Developer-Assessment#readme",
   "devDependencies": {
     "jest": "^26.1.0"
-  }
+  },
+  "dependencies": {}
 }
