@@ -1,0 +1,22 @@
+{
+  "name": "mtitl-fullstack-developer-assessment",
+  "version": "1.0.0",
+  "description": "MTITL Full STACK Develper Assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denzildoyle/MTITL-Fullstack-Developer-Assessment.git"
+  },
+  "author": "Denzil Doyle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denzildoyle/MTITL-Fullstack-Developer-Assessment/issues"
+  },
+  "homepage": "https://github.com/denzildoyle/MTITL-Fullstack-Developer-Assessment#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}

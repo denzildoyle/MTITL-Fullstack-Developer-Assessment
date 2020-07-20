@@ -37,6 +37,4 @@ let MissingLetters = class {
     }
 };
 
-const oneLetterMissing = new MissingLetters("abcdefghijklmnopqrstuvwxy");
-
-console.log(oneLetterMissing.GetMissingLetters);
+module.exports = MissingLetters;
