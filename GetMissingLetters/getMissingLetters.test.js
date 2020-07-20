@@ -2,7 +2,7 @@ const MissingLetters = require('./getMissingLetters');
 
 const oneLetterMissing = new MissingLetters("abcdefghijklmnopqrstuvwxy");
 const allLetters = new MissingLetters("abcdefghijklmnopqrstuvwxyz");
-const sentanceWithAllLetters = new MissingLetters("A quick brown fox jumps over the lazy dog");
+const sentanceWithAllLetters = new MissingLetters("A quick brown fox jumps over the lazy dog()*)*_1343532");
 
 describe('MISSING LETTERS', () => {
     test('Z missing', () => {

@@ -12,6 +12,8 @@ let MissingLetters = class {
         this.removeDuplicateChars(
         this.sortAlphabets(
         this.sentence
+        .replace(/[^\w\s]/gi, '') //remove all special characters
+        .replace(/[0-9]/g, '') // remove all numbers
         .replace(/\s/g, '') //remove spaces from sentence
         .toLowerCase()))) // convert to lowercase instead of uppercase for performance improvements https://stackoverflow.com/questions/5150766/javascript-change-string-case-speed
     }
@@ -29,10 +31,10 @@ let MissingLetters = class {
         var missingLetters = [];
 
         for (let i = 0; i < alphabet.length; i++) {
-            
+
             if (string.indexOf(alphabet[i]) == -1)
                 missingLetters.push(alphabet[i]);
-        }       
+        }
         return missingLetters.toString();
     }
 };
