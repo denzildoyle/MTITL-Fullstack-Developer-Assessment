@@ -8,11 +8,35 @@ let MissingLetters = class {
     }
 
     findMissingLetters() {
-        return this.sentence;
+        return this.missingChars(
+        this.removeDuplicateChars(
+        this.sortAlphabets(
+        this.sentence
+        .replace(/\s/g, '') //remove spaces from sentence
+        .toLowerCase()))) // convert to lowercase instead of uppercase for performance improvements https://stackoverflow.com/questions/5150766/javascript-change-string-case-speed
+    }
+
+    sortAlphabets(string) {
+        return string.split('').sort().join('');
+    };
+
+    removeDuplicateChars(string){
+        return Array.from(new Set(string)).join('');
+    }
+
+    missingChars(string){
+        const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        var missingLetters = [];
+
+        for (let i = 0; i < alphabet.length; i++) {
+            
+            if (string.indexOf(alphabet[i]) == -1)
+                missingLetters.push(alphabet[i]);
+        }       
+        return missingLetters.toString();
     }
 };
 
-
-const oneLetterMissing = new MissingLetters("A quick brown fox jumps over the lazy dog");
+const oneLetterMissing = new MissingLetters("abcdefghijklmnopqrstuvwxy");
 
 console.log(oneLetterMissing.GetMissingLetters);
