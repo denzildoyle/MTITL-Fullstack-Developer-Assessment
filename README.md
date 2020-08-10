@@ -29,11 +29,11 @@ Method signature: public String GetMissingLetters(String sentence)
 
 By starting at the top of the triangle and moving to adjacent numbers on the row below, the maximum total from top to bottom is 27.
 
-5
-9 6
-4 6 8
-0 7 1 5
-
+5  
+9 6  
+4 6 8  
+0 7 1 5  
+  
 i.e. 5 + 9 + 6 + 7 = 27.
 
 Write a program using a language of your choice to find the maximum total from top to bottom in a text file containing a triangle with 100 rows.
